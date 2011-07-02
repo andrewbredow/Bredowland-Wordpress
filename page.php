@@ -7,7 +7,7 @@
 
        			<h2><?php the_title(); ?></h2>
 
-       			<?php // DISABLE META INFORAMTION ON ARTICLES // include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+       			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
        			<div class="entry">
 

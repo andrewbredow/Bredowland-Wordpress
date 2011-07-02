@@ -26,7 +26,7 @@
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
 		          bloginfo('name'); }
-		      if ($paged>1) {
+		      if (isset($paged) && $paged>1) {
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
@@ -46,7 +46,7 @@
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
 		          bloginfo('name'); }
-		      if ($paged>1) {
+		      if (isset($paged) && $paged>1) {
 		         echo ' - page '. $paged; }
 		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
