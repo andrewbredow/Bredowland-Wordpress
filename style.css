@@ -93,7 +93,7 @@ figure {
 /* Additional default elements */
 
 article {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 article div.entry,
@@ -186,6 +186,9 @@ header {
     }
 
 #sidebar {}
+    #sidebar div.widget {
+        margin-left: 10px;
+    }
     div.widget {
         margin-bottom: 20px;
     }
