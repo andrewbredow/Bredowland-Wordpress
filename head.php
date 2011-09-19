@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
     
     <link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow' rel='stylesheet' type='text/css'>
