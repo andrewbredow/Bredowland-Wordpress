@@ -23,13 +23,7 @@
 				wp_enqueue_script('jquery');
 				wp_enqueue_script('formalize');
             	
-            	wp_register_style('960_reset', $templateDir . '/_/css/reset.css');
-            	wp_register_style('960', $templateDir . '/_/css/960.css');
-            	wp_register_style('formalize', $templateDir . '/_/css/formalize.css');
             	wp_register_style('main', get_bloginfo('stylesheet_url'));
-            	wp_enqueue_style('960_reset');
-            	wp_enqueue_style('960');
-            	wp_enqueue_style('formalize');
             	wp_enqueue_style('main');
 				
 			}

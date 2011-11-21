@@ -1,0 +1,296 @@
+/*   
+ * Theme Name: The Bredowland Theme
+ * Theme URI: http://html5reset.org
+ * Description: Bredowland.com theme based on simple theme from http://html5reset.org
+ * Author: Andrew Bredow
+ * Author URI: http://andrewbredow.com
+ * Version: 1
+ */
+
+/*
+ * Adapted from 960 Grid System ~ Text CSS.
+ * Learn more ~ http://960.gs/
+ * 
+ * Licensed under GPL and MIT.
+ */
+
+
+@import 'reset.scss';
+@import '960.scss';
+@import 'formalize.scss';
+ 
+
+/* Basic HTML */
+body {
+    font-family: 13px/15 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+pre,
+code {
+    font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+}
+
+hr {
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+/* `Spacing */
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+    margin-bottom: 20px;
+}
+
+/* Additional default elements */
+
+article {
+    margin-bottom: 60px;
+}
+
+article div.entry,
+article div.entry-content {
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+    article footer.postmetadata {
+        margin-top: -12px;
+    }
+
+a,
+a:visited {
+    color: #2BB6D0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.nostyle,
+a.nostyle:link,
+a.nostyle:visited,
+a.nostyle:hover {
+    text-decoration: none;
+}
+
+/* Wordpress/Bredowland */
+
+html {
+    background: url('/wp-content/themes/bredowland/_/img/background.jpg') center -70px;
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: #543930;
+    font-size: 15px;
+    margin-top: 40px;
+    min-height: 100%;
+}
+header {
+    margin-bottom: 20px;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-shadow: -1px -1px 1px #fff;
+    
+    .grid_3.collapse {
+        margin: 0 0 0 4px;
+        overflow: hidden;
+        width: 235px;
+    }
+    
+    header h1 {
+        font-size: 42px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 48px;
+        margin: 16px 0 0;
+        text-shadow: 1px 1px 1px #fff;
+        position: relative;
+        
+        a {
+            color: #402303 !important;
+        }
+        
+        span {
+            color: #2BB6D0;
+            bottom: -20px;
+            font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 60px;
+            position: relative;
+        }
+    }
+    
+    span.description {
+        background:#fff;
+        background:rgba(255,255,255,0.5);
+        bottom: 10px;
+        display: block;
+        color: #543930;
+        filter: alpha(opacity=50);
+        font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 30px;
+        padding: 0 10px;
+        line-height: .72em;
+        left: 0;
+        position: absolute;
+        right: 10px;
+        text-align: right;
+        text-transform: lowercase;
+        width: 940px;
+    }
+    
+}
+
+#sidebar {
+    div.widget {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        
+        h2 {
+            border-bottom: 1px solid #543930;
+            font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+    
+    li {
+        list-style: none;
+        margin: 0;
+    }
+    
+    h2,
+    ul {
+        margin: 2px 0 6px;
+    }
+    
+    ul {
+        border-bottom: 1px #ccc;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    #searchform {
+        clear: both;
+        float: left;
+        margin-bottom: 20px;
+        
+        label {
+            display: none;
+            position: relative;
+        }
+    }
+    
+}
+
+footer.meta {
+    color: #2BB6D0;
+    font-size: 12px;
+    margin: 10px 0;
+    
+    time {
+        font-weight: bold;
+    }
+}
+
+/* Formalize takes care of most of this. */
+form {
+    div.field {
+        margin-bottom: 10px;
+    }
+}
+
+article {
+    h1,
+    h2,
+    h2 a {
+        color: #F98BB5 !important;
+        font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
+        margin: 12px 0 8px;
+    }
+}
+
+footer#footer {
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 10px 0;
+    padding-bottom: 20px;
+    
+    #about_site_trigger {
+        display: block;
+        height: 50px;
+    }
+}
+
+
+#about_site {
+    margin: 10px 0;
+    display: none;
+    
+    p {
+        line-height: 1.4em;
+        margin: 0;
+    }
+}
+    
+    
+    
+    
+    
