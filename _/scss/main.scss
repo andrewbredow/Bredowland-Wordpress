@@ -16,117 +16,8 @@
 
 
 @import 'reset.scss';
-@import '960.scss';
 @import 'formalize.scss';
- 
-
-/* Basic HTML */
-body {
-    font-family: 13px/15 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
-}
-
-pre,
-code {
-    font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-}
-
-hr {
-    border: 0 #ccc solid;
-    border-top-width: 1px;
-    clear: both;
-    height: 0;
-}
-
-/* Headings */
-
-h1 {
-    font-size: 25px;
-}
-
-h2 {
-    font-size: 23px;
-}
-
-h3 {
-    font-size: 21px;
-}
-
-h4 {
-    font-size: 19px;
-}
-
-h5 {
-    font-size: 17px;
-}
-
-h6 {
-    font-size: 15px;
-}
-
-/* `Spacing */
-
-ol {
-    list-style: decimal;
-}
-
-ul {
-    list-style: disc;
-}
-
-li {
-    margin-left: 30px;
-}
-
-p,
-dl,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-figure {
-    margin-bottom: 20px;
-}
-
-/* Additional default elements */
-
-article {
-    margin-bottom: 60px;
-}
-
-article div.entry,
-article div.entry-content {
-    font-family: Georgia, serif;
-    font-size: 15px;
-}
-    article footer.postmetadata {
-        margin-top: -12px;
-    }
-
-a,
-a:visited {
-    color: #2BB6D0;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-a.nostyle,
-a.nostyle:link,
-a.nostyle:visited,
-a.nostyle:hover {
-    text-decoration: none;
-}
-
-/* Wordpress/Bredowland */
+@import 'typography.scss';
 
 html {
     background: url('/wp-content/themes/bredowland/_/img/background.jpg') center -70px;
@@ -138,9 +29,13 @@ body {
     border: 2px solid #ccc;
     color: #543930;
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
     min-height: 100%;
+    width: 960px;
 }
+
 header {
     margin-bottom: 20px;
     min-height: 200px;
@@ -148,13 +43,7 @@ header {
     position: relative;
     text-shadow: -1px -1px 1px #fff;
     
-    .grid_3.collapse {
-        margin: 0 0 0 4px;
-        overflow: hidden;
-        width: 235px;
-    }
-    
-    header h1 {
+    h1 {
         font-size: 42px;
         font-weight: normal;
         letter-spacing: 1px;
@@ -164,16 +53,25 @@ header {
         position: relative;
         
         a {
+            
             color: #402303 !important;
+            
+            span {
+                color: #2BB6D0;
+                bottom: -20px;
+                font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
+                font-size: 60px;
+                position: relative;
+            }
         }
         
-        span {
-            color: #2BB6D0;
-            bottom: -20px;
-            font-family: 'Over the Rainbow', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 60px;
-            position: relative;
-        }
+    }
+    
+    .image {
+        margin-left: .3333%;
+        overflow: hidden;
+        float: left;
+        width: 24.583375%;
     }
     
     span.description {

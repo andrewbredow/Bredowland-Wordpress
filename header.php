@@ -1,8 +1,8 @@
 <?php get_head() ?>
-<body <?php body_class('container_12'); ?>>
+<body <?php body_class(); ?>>
 
     <header>
-        <div class="grid_12">
+        <div>
     		<h1><a href="<?php echo get_option('home'); ?>/" class="nostyle">adventures in <span>Bredowland</span></a></h1>
     	</div>
     	<div class="images">
@@ -21,7 +21,7 @@
     	        )
     	    ?>
     	    <?php foreach ($images as $image) : ?>
-    		    <div class="grid_3 collapse">
+    		    <div class="image">
     		        <img src="<?php echo get_bloginfo('template_directory') . '/_/img/family/' . $image ?>" width="238" alt="Image"/>
     		    </div>
     	    <?php endforeach ?>

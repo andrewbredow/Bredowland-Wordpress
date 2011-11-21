@@ -5,8 +5,8 @@ This is a simple Wordpress theme that I put together for our [family blog](http:
 
 ## Credits
 * Based initially on the [HTML5 Reset Wordpress Theme](https://github.com/murtaugh/HTML5-Reset-Wordpress-Theme)
-* Utilizes the excellent [960 Grid System](https://github.com/nathansmith/960-grid-system) for layout
 * Utilizes [Formalize](https://github.com/nathansmith/formalize) for forms
+* Utilizes [SASS](http://sass-lang.com) for generating CSS
 
 ## Design
 * Background copyright Bizuza Designs. If you fork this theme and want to keep the background please buy a copy in their store on [Etsy](bizuza.etsy.com).
